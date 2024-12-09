@@ -11,7 +11,7 @@ def setup_driver() -> webdriver.Chrome:
     """
     Sets up and returns a configured Chrome WebDriver.
     """
-    service = Service(executable_path='chromedriver.exe')
+    service = Service()
     return webdriver.Chrome(service=service)
 
 def get_page_proposals(driver: webdriver.Chrome, current_page_url: str) -> list:
@@ -151,3 +151,6 @@ def main():
     with open('../data/failed_proposals.txt', 'w') as f:
         for proposal_id in failed_proposals:
             f.write(f'{proposal_id}\n')
+
+if __name__ == '__main__':
+    main()
