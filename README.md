@@ -13,7 +13,7 @@ This repository contains code and resources for topic modeling on the 2023 New Y
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/2023-nyc-pb-topic-modeling.git
+    git clone https://github.com/John-A-Saad/2023-nyc-pb-topic-modeling.git
     ```
 2. Install the required dependencies:
     ```bash
